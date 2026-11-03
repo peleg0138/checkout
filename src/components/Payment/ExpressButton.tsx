@@ -1,14 +1,14 @@
 import React from 'react'
 import applePaySrc from '../../assets/icons/express.png'
 import googlePaySrc from '../../assets/icons/express-gpay.png'
-import paypalSrc from '../../assets/icons/express-paypal.png'
+import paypalSrc from '../../assets/icons/paypal-express.png'
 
 type ExpressType = 'apple' | 'google' | 'paypal'
 
 const EXPRESS_ASSETS: Record<ExpressType, { src: string; label: string; bg: string }> = {
   apple:  { src: applePaySrc,  label: 'Pay with Apple Pay',  bg: '#000000' },
   google: { src: googlePaySrc, label: 'Pay with Google Pay', bg: '#000000' },
-  paypal: { src: paypalSrc,    label: 'Pay with PayPal',     bg: '#FFC439' },
+  paypal: { src: paypalSrc,    label: 'Pay with PayPal',     bg: '#0070BA' },
 }
 
 interface ExpressButtonProps {
